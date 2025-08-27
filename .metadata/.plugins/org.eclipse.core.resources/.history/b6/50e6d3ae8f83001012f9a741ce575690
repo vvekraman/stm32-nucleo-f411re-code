@@ -1,0 +1,12 @@
+// BLINKING USER LED (LD2)
+// PORT: A
+// PIN : 5
+// Clock supplied via AHB1 100MHz (refer block diagram)
+
+// APB: Advanced Peripheral Bus
+// AHB: Advanced High Performance Bus
+//(AHB can access for example a GPIO in fewer clock cycles)
+
+#define PERIPH_BASE			(0x4000 0000UL)
+
+
