@@ -85,15 +85,9 @@ int main(void)
 		for(int i=0; i<100000; i++){}
 
 		GPIOA->ODR |= (1U<<5);
-		for(int i=0; i<100000; i++){}
+		for(int i=0; i<500000; i++){}
 
 		GPIOA->ODR &= ~(1U<<5);
-		for(int i=0; i<100000; i++){}
-
-		GPIOA->ODR |= (1U<<5);
-		for(int i=0; i<100000; i++){}
-
-		GPIOA->ODR &= ~(1U<<5);
-		for(int i=0; i<1000000; i++){}
+		for(int i=0; i<800000; i++){}
 	}
 }
