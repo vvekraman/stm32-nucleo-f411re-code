@@ -1,7 +1,21 @@
-00:00:28 **** Incremental Build of configuration Debug for project 0_led_toggle_addr ****
+01:05:07 **** Incremental Build of configuration Debug for project 0_led_toggle_btn ****
 make -j16 all 
-arm-none-eabi-size  0_led_toggle_addr.elf 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DNUCLEO_F411RE -DSTM32 -DSTM32F4 -DSTM32F411RETx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "0_led_toggle_btn.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vivek\Documents\coding\STM32F4-WS\0_led_toggle_btn\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="0_led_toggle_btn.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 0_led_toggle_btn.elf
+ 
+arm-none-eabi-size  0_led_toggle_btn.elf 
+arm-none-eabi-objdump -h -S 0_led_toggle_btn.elf  > "0_led_toggle_btn.list"
    text	   data	    bss	    dec	    hex	filename
-    912	      0	   1568	   2480	    9b0	0_led_toggle_addr.elf
+    848	      0	   1568	   2416	    970	0_led_toggle_btn.elf
+Finished building: default.size.stdout
+ 
+Finished building: 0_led_toggle_btn.list
+ 
+01:05:09 **** Incremental Build of configuration Debug for project 0_led_toggle_btn ****
+make -j16 all 
+arm-none-eabi-size  0_led_toggle_btn.elf 
+   text	   data	    bss	    dec	    hex	filename
+    848	      0	   1568	   2416	    970	0_led_toggle_btn.elf
 Finished building: default.size.stdout
  
