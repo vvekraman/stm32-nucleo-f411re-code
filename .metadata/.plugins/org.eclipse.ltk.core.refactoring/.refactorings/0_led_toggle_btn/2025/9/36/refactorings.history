@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;0_led_toggle_btn/Inc/stm32_custom_headers&apos; to &apos;stm32_custom_headers.h&apos;" description="Rename resource &apos;stm32_custom_headers&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Inc/stm32_custom_headers" name="stm32_custom_headers.h" stamp="1756766451203" updateReferences="true"/>
-</session>

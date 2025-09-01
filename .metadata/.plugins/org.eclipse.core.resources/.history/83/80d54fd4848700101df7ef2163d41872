@@ -1,7 +1,0 @@
-// Struct for RCC
-typedef struct
-{
-	volatile uint32_t DUMMY[12];
-	volatile uint32_t AHB1ENR;
-} RCC_TypeDef;
-
